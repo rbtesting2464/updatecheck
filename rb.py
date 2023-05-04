@@ -63,13 +63,6 @@ for x in range(10000):
 	l='Mobile Safari/537.36 Sleipnir/3.5.28'
 	uakua=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	useragent.append(uakua)
-try:
-	prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
-	open('proxies.txt','w').write(proxies)
-except Exception as e:
-	print('\x1b[1;95m[√] please wait loading..... ')
-	
-proxies=open('proxies.txt','r').read().splitlines()
 mafia = ['Mozilla/5.0 (Linux; Android 13; SM-N986B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.29 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 13; SM-N986U1 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.75 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]','Mozilla/5.0 (Linux; Android 13; SM-N986B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90;]','Mozilla/5.0 (Linux; Android 13; SM-N986B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 13; SM-N986U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 EdgA/111.0.1661.38','Mozilla/5.0 (Linux; Android 13; SM-N986B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.154 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/398.1.0.11.69;]','Mozilla/5.0 (Linux; Android 10; SM-N9860) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Mobile Safari/537.36 EdgA/88.0.705.53','Mozilla/5.0 (Linux; Android 13; SM-N986B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/398.1.0.11.69;]']
 ua = random.choice(mafia)
 #new ua
