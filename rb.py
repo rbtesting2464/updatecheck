@@ -1,4 +1,3 @@
-
 from os import path
 import os,base64,zlib,pip,urllib
 print('\n\033[1;37m install modules...\n It will take some seconds Please Wait...')
@@ -852,7 +851,7 @@ def api(ids,names,passlist):
                                         "X-Fb-Rmd": "cached=0;state=URL_ELIGIBLE",
                                         "X-Graphql-Request-Purpose": "fetch",
                                         "X-Fb-Background-State": "1",
-                                        "User-Agent": M_useragent,
+                                        "User-Agent":M_useragent,
                                         "X-FB-Net-HNI": "41001",
                                         "X-FB-SIM-HNI": "41001",
                                         "X-FB-Connection-Type": "MOBILE.LTE",
@@ -947,7 +946,7 @@ def api2(ids,names,passlist):
                                         "X-Fb-Rmd": "cached=0;state=URL_ELIGIBLE",
                                         "X-Graphql-Request-Purpose": "fetch",
                                         "X-Fb-Background-State": "1",
-                                        "User-Agent": M_useragent,
+                                        "User-Agent":M_useragent,
                                         "X-FB-Net-HNI": "41001",
                                         "X-FB-SIM-HNI": "41001",
                                         "X-FB-Connection-Type": "MOBILE.LTE",
