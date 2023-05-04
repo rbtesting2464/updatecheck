@@ -814,7 +814,7 @@ def api(ids,names,passlist):
                                 fbs=random.choice(fbks)
                                 gtt=random.choice(xxxxx)
                                 gttt=random.choice(xxxxx)
-                                M_useragent = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=2.0,width=720,height=1280};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/{str(awmsim1)};FBMF/samsung ;FBBD/samsung;FBPN/{str(fbs)};FBDV/{str(gtt)};FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                                user = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=2.0,width=720,height=1280};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/{str(awmsim1)};FBMF/samsung ;FBBD/samsung;FBPN/{str(fbs)};FBDV/{str(gtt)};FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
                                 useragent  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/'+fbav+';FBBV/'+fbbv+';FBDM/{density=1.0,width=1280,height=800};FBLC/'+fblc+';FBCR/;FBMF/'+fbmf+';FBBD/'+fbbd+';FBPN/com.facebook.katana;FBDV/'+fbdv+';FBSV/'+fbsv+';nullFBCA/'+fbca+';]"
                                 sim = str(random.randint(11111, 99999))
                                 xfb_device = str(random.randint(1111, 9999))
@@ -851,7 +851,7 @@ def api(ids,names,passlist):
                                         "X-Fb-Rmd": "cached=0;state=URL_ELIGIBLE",
                                         "X-Graphql-Request-Purpose": "fetch",
                                         "X-Fb-Background-State": "1",
-                                        "User-Agent":M_useragent,
+                                        "User-Agent":user,
                                         "X-FB-Net-HNI": "41001",
                                         "X-FB-SIM-HNI": "41001",
                                         "X-FB-Connection-Type": "MOBILE.LTE",
@@ -908,7 +908,7 @@ def api2(ids,names,passlist):
                                 fbs=random.choice(fbks)
                                 gtt=random.choice(xxxxx)
                                 gttt=random.choice(xxxxx)
-                                M_useragent = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=2.0,width=720,height=1280};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/{str(awmsim1)};FBMF/samsung ;FBBD/samsung;FBPN/{str(fbs)};FBDV/{str(gtt)};FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                                user = f'Davik/2.1.0 (Linux; U; Android {str(android_version)}.0.0; {str(gtt)} Build/{str(gttt)} [FBAN/FB4A;FBAV/{str(application_version)};FBBV/{str(application_version_code)};FBDM/'+'{density=2.0,width=720,height=1280};'+f'FBLC/en_US;FBRV/{str(application_version_code)};FBCR/{str(awmsim1)};FBMF/samsung ;FBBD/samsung;FBPN/{str(fbs)};FBDV/{str(gtt)};FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
                                 useragent  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/'+fbav+';FBBV/'+fbbv+';FBDM/{density=1.0,width=1280,height=800};FBLC/'+fblc+';FBCR/;FBMF/'+fbmf+';FBBD/'+fbbd+';FBPN/com.facebook.katana;FBDV/'+fbdv+';FBSV/'+fbsv+';nullFBCA/'+fbca+';]"
                                 sim = str(random.randint(11111, 99999))
                                 xfb_device = str(random.randint(1111, 9999))
@@ -946,7 +946,7 @@ def api2(ids,names,passlist):
                                         "X-Fb-Rmd": "cached=0;state=URL_ELIGIBLE",
                                         "X-Graphql-Request-Purpose": "fetch",
                                         "X-Fb-Background-State": "1",
-                                        "User-Agent":M_useragent,
+                                        "User-Agent":user,
                                         "X-FB-Net-HNI": "41001",
                                         "X-FB-SIM-HNI": "41001",
                                         "X-FB-Connection-Type": "MOBILE.LTE",
